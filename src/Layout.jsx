@@ -37,6 +37,88 @@ const Layout = () => {
         </div>
       </header>
       <Outlet />
+      <footer className="footer">
+        <div className="wrap">
+          <p className="footer__text">
+            A sleek, modern Jekyll theme for personal websites.
+          </p>
+
+          <div className="footer__copyright">
+            <span>© 2020 Personal</span>
+            <a href="https://jekyllthemes.io" target="_blank">
+              Jekyll Themes
+            </a>
+          </div>
+
+          <ul className="socials">
+            <li className="socials__item">
+              <a
+                href="https://www.facebook.com/jekyllthemes/"
+                target="_blank"
+                className="socials__item__link"
+                title="Facebook"
+              >
+                <i className="fab fa-facebook-f" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li className="socials__item">
+              <a
+                href="https://twitter.com/jekyllthemesio"
+                target="_blank"
+                className="socials__item__link"
+                title="Twitter"
+              >
+                <i className="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li className="socials__item">
+              <a
+                href="http://instagram.com"
+                target="_blank"
+                className="socials__item__link"
+                title="Instagram"
+              >
+                <i className="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li className="socials__item">
+              <a
+                href="https://medium.com/"
+                target="_blank"
+                className="socials__item__link"
+                title="Medium"
+              >
+                <i className="fab fa-medium" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li className="socials__item">
+              <a
+                href="https://www.quora.com/"
+                target="_blank"
+                className="socials__item__link"
+                title="Quora"
+              >
+                <i className="fab fa-quora" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li className="socials__item">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                className="socials__item__link"
+                title="Github"
+              >
+                <i className="fab fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </>
   );
 };
