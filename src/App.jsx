@@ -7,6 +7,7 @@ import Layout from "./Layout";
 import Projects from "./projects/Projects";
 import About from "./about/About";
 import Contact from "./contact/Contact";
+import Success from "./success/Success";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +19,7 @@ function App() {
           <Route index element={<Projects />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="success" element={<Success />} />
         </Route>
       </Routes>
     </BrowserRouter>
