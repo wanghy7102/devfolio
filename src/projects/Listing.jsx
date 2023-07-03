@@ -1,5 +1,6 @@
 import FormArticle from "./FormArticle";
 import QuizArticle from "./QuizArticle";
+import ProductArticle from "./ProductArticle";
 
 const Listing = () => {
   return (
@@ -7,6 +8,7 @@ const Listing = () => {
       <div className="wrap">
         <FormArticle />
         <QuizArticle />
+        <ProductArticle />
       </div>
     </section>
   );
