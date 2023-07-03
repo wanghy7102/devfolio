@@ -1,24 +1,41 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = () => {
-  const [email, setEmail] = useState();
-  const [name, setName] = useState();
-  const [message, setMessage] = useState();
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const captchaRef = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let templateParams = {
+    const token = captchaRef.current.getValue();
+    captchaRef.current.reset();
+    const templateParams = {
       email: email,
       name: name,
       message: message,
+      "g-recaptcha-response": token,
     };
-    emailjs.send(
-      "service_6urdlqw",
-      "template_ovm27eq",
-      templateParams,
-      "emtCwHO16kNS49jde"
-    );
+    emailjs
+      .send(
+        "service_6urdlqw",
+        "template_ovm27eq",
+        templateParams,
+        "emtCwHO16kNS49jde"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setEmail("");
+          setName("");
+          setMessage("");
+        },
+        (error) => {
+          console.log("FAILED...", error);
+        }
+      );
   };
 
   return (
@@ -34,6 +51,7 @@ const ContactForm = () => {
                   name="email"
                   placeholder="Your email address..."
                   className="contact-form__input"
+                  value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
@@ -45,6 +63,7 @@ const ContactForm = () => {
                   name="name"
                   placeholder="Your name..."
                   className="contact-form__input"
+                  value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
@@ -55,6 +74,7 @@ const ContactForm = () => {
                   name="message"
                   placeholder="Your message..."
                   className="contact-form__textarea"
+                  value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
@@ -65,6 +85,11 @@ const ContactForm = () => {
                 style={{ display: "none" }}
                 className="contact-form__gotcha"
                 val="hello"
+              />
+
+              <ReCAPTCHA
+                sitekey="6Le_Qu0mAAAAAFjsfGnbaNrYXugjXlQLzMxNHiS5"
+                ref={captchaRef}
               />
 
               <div className="contact-form__item">
