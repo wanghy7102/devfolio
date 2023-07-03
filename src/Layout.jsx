@@ -17,7 +17,15 @@ const Layout = () => {
             <div className="menu__wrap">
               <ul className="menu__list">
                 <li className="menu__list__item">
-                  <a href="/" className="menu__list__item__link cc-active">
+                  <a href="/home" className="menu__list__item__link cc-active">
+                    Home
+                  </a>
+                </li>
+                <li className="menu__list__item">
+                  <a
+                    href="/projects"
+                    className="menu__list__item__link cc-active"
+                  >
                     Projects
                   </a>
                 </li>
