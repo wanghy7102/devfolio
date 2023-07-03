@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [email, setEmail] = useState();
@@ -7,7 +8,17 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Hello World!");
+    let templateParams = {
+      email: email,
+      name: name,
+      message: message,
+    };
+    emailjs.send(
+      "service_6urdlqw",
+      "template_ovm27eq",
+      templateParams,
+      "emtCwHO16kNS49jde"
+    );
   };
 
   return (
