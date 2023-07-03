@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -7,6 +8,7 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const captchaRef = useRef(null);
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,13 +29,10 @@ const ContactForm = () => {
       )
       .then(
         (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          setEmail("");
-          setName("");
-          setMessage("");
+          navigate("/success");
         },
         (error) => {
-          console.log("FAILED...", error);
+          navigate("/error");
         }
       );
   };
