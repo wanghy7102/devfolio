@@ -1,11 +1,12 @@
-import { Form } from "react-router-dom";
 import FormArticle from "./FormArticle";
+import QuizArticle from "./QuizArticle";
 
 const Listing = () => {
   return (
-    <section class="listing">
-      <div class="wrap">
+    <section className="listing">
+      <div className="wrap">
         <FormArticle />
+        <QuizArticle />
       </div>
     </section>
   );
