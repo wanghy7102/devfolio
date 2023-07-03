@@ -8,6 +8,7 @@ import Projects from "./projects/Projects";
 import About from "./about/About";
 import Contact from "./contact/Contact";
 import Success from "./success/Success";
+import Error from "./error/Error";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,6 +21,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="success" element={<Success />} />
+          <Route path="error" element={<Error />} />
         </Route>
       </Routes>
     </BrowserRouter>
