@@ -1,14 +1,21 @@
+import { useState } from "react";
+
 const ContactForm = () => {
+  const [email, setEmail] = useState();
+  const [name, setName] = useState();
+  const [message, setMessage] = useState();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Hello World!");
+  };
+
   return (
     <section className="single">
       <div className="wrap">
         <article className="single-post">
           <div className="contact-form">
-            <form
-              method="post"
-              action="https://formspree.io/hello@jekyllthemes.io"
-              id="contact-form"
-            >
+            <form onSubmit={(e) => handleSubmit(e)} id="contact-form">
               <div className="contact-form__item">
                 <label className="contact-form__label">Email Address *</label>
                 <input
@@ -16,6 +23,7 @@ const ContactForm = () => {
                   name="email"
                   placeholder="Your email address..."
                   className="contact-form__input"
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
 
@@ -26,6 +34,7 @@ const ContactForm = () => {
                   name="name"
                   placeholder="Your name..."
                   className="contact-form__input"
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
 
@@ -35,21 +44,16 @@ const ContactForm = () => {
                   name="message"
                   placeholder="Your message..."
                   className="contact-form__textarea"
+                  onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
 
-              <input type="hidden" name="_next" value="/thanks" />
-              <input
-                type="hidden"
-                name="_subject"
-                value="Contact form submission"
-              />
               <input
                 type="text"
                 name="_gotcha"
                 style={{ display: "none" }}
                 className="contact-form__gotcha"
-                val=""
+                val="hello"
               />
 
               <div className="contact-form__item">
