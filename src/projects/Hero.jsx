@@ -11,11 +11,8 @@ const Hero = () => {
       </div>
 
       <div className="wrap">
-        <h1>Contact</h1>
-        <p>
-          Personal comes with a built-in contact form that's free and easy to
-          set up.
-        </p>
+        <h1>Projects</h1>
+        <p>Demo projects to showcase various UI designs and use cases.</p>
       </div>
     </section>
   );
