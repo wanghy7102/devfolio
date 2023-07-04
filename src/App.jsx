@@ -10,7 +10,6 @@ import About from "./about/About";
 import Contact from "./contact/Contact";
 import Success from "./success/Success";
 import Error from "./error/Error";
-import { default as FormmLayout } from "./projects/form/Layout";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -26,7 +25,6 @@ function App() {
           <Route path="success" element={<Success />} />
           <Route path="error" element={<Error />} />
         </Route>
-        <Route path="/form" element={<FormmLayout />} />
       </Routes>
     </BrowserRouter>
   );
