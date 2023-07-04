@@ -17,8 +17,8 @@ const Layout = () => {
             <div className="menu__wrap">
               <ul className="menu__list">
                 <li className="menu__list__item">
-                  <a href="/home" className="menu__list__item__link cc-active">
-                    Home
+                  <a href="/about" className="menu__list__item__link">
+                    About
                   </a>
                 </li>
                 <li className="menu__list__item">
@@ -27,11 +27,6 @@ const Layout = () => {
                     className="menu__list__item__link cc-active"
                   >
                     Projects
-                  </a>
-                </li>
-                <li className="menu__list__item">
-                  <a href="/about" className="menu__list__item__link">
-                    About
                   </a>
                 </li>
                 <li className="menu__list__item">
