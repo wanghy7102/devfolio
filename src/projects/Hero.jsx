@@ -4,7 +4,7 @@ const Hero = () => {
       <div
         className="hero__image"
         style={{
-          backgroundImage: `url("https://d1qmdf3vop2l07.cloudfront.net/yellow-sage.cloudvent.net/hash-store/fda0ca9d5e10c6bf184e3b6bbc44a668.jpg")`,
+          backgroundImage: `url("img/projects.jpg")`,
         }}
       >
         <div className="hero__overlay"></div>
