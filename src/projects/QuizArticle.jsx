@@ -5,7 +5,7 @@ const QuizArticle = () => {
         <div
           className="post__image"
           style={{
-            backgroundImage: `url("https://d1qmdf3vop2l07.cloudfront.net/yellow-sage.cloudvent.net/hash-store/f0e518c7010401d4da38558854239955.jpg")`,
+            backgroundImage: `url("img/online-quiz.jpg")`,
           }}
         ></div>
       </div>

@@ -5,7 +5,7 @@ const ProductArticle = () => {
         <div
           className="post__image"
           style={{
-            backgroundImage: `url("https://d1qmdf3vop2l07.cloudfront.net/yellow-sage.cloudvent.net/hash-store/8696d297a15eac55b98284084c2760bb.jpg")`,
+            backgroundImage: `url("img/user-database.jpg")`,
           }}
           data-cms-original-style="background-image: url(/images/demo/work-03.jpg)"
         ></div>

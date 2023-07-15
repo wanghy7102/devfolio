@@ -5,7 +5,7 @@ const FormArticle = () => {
         <div
           className="post__image"
           style={{
-            backgroundImage: `url("https://d1qmdf3vop2l07.cloudfront.net/yellow-sage.cloudvent.net/hash-store/a96cf527d69f09862655209b9057530c.jpg")`,
+            backgroundImage: `url("img/school-register.jpg")`,
           }}
         ></div>
       </div>
