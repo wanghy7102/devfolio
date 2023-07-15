@@ -16,8 +16,9 @@ const Hero = () => {
       <div className="wrap">
         <h1>Hi, I am Hong-Yi</h1>
         <p>
-          I am a full-stack developer with more than 10 years of experience. How
-          can i be of service?
+          I’m a full-stack developer with 10+ years of experience. I specialize
+          in Azure cloud development, and I’m passionate about creating
+          beautiful, functional websites that help businesses grow.
         </p>
 
         <ul className="socials">

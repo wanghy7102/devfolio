@@ -13,8 +13,9 @@ const Hero = () => {
       <div className="wrap">
         <h1>Contact</h1>
         <p>
-          Personal comes with a built-in contact form that's free and easy to
-          set up.
+          Thank you for visiting my website! If you have any questions or
+          comments, please feel free to contact me using the form below. I will
+          respond as soon as possible.
         </p>
       </div>
     </section>

@@ -12,7 +12,11 @@ const Hero = () => {
 
       <div className="wrap">
         <h1>Projects</h1>
-        <p>Demo projects to showcase various UI designs and use cases.</p>
+        <p>
+          To showcase my web development skills, I’ve created several demo
+          projects that demonstrate my UX design and frontend development
+          abilities.
+        </p>
       </div>
     </section>
   );
