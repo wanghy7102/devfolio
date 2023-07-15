@@ -12,12 +12,14 @@ const QuizArticle = () => {
       <div className="post__content-wrap">
         <div className="post__content">
           <h2 className="post__title">
-            <a href="/project/wake-up">Wake up</a>
+            <a href="https://wanghy7102.github.io/online-quiz" target="_blank">
+              Online Quiz
+            </a>
           </h2>
-          <p className="post__subtitle">Stationery design</p>
+          <p className="post__subtitle">A ReactJS project</p>
           <p className="post__description">
-            Personal has been designed to put your content first, with a stylish
-            and minimal interface to make navigation easy.
+            Learners can take quizzes and assessments from anywhere and at any
+            time.
           </p>
         </div>
       </div>

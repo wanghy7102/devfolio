@@ -13,13 +13,18 @@ const ProductArticle = () => {
       <div className="post__content-wrap">
         <div className="post__content">
           <h2 className="post__title">
-            <a href="/project/edith-magazine">Edith magazine</a>
+            <a
+              href="https://wanghy7102.github.io/user-database"
+              target="_blank"
+            >
+              User Database
+            </a>
           </h2>
-          <p className="post__subtitle">Print design</p>
+          <p className="post__subtitle">A ReactJS project</p>
           <p className="post__description">
-            We’ve included everything you need to create engaging posts about
-            your work, and show off your case studies in a beautiful way – check
-            out a single post to see!
+            A database that stores information about users. It can include
+            information such as name and email address. It can also include
+            information about the user's posts, photos, and todo list.
           </p>
         </div>
       </div>

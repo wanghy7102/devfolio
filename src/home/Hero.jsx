@@ -7,7 +7,10 @@ const Hero = () => {
           backgroundImage: `url("img/home.jpg")`,
         }}
       >
-        <div className="hero__overlay"></div>
+        <div
+          className="hero__overlay"
+          style={{ background: "rgba(19, 41, 48, 0.6)" }}
+        ></div>
       </div>
 
       <div className="wrap">
