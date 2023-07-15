@@ -15,6 +15,7 @@ const FormArticle = () => {
             <a
               href="https://wanghy7102.github.io/school-register"
               target="_blank"
+              rel="noopener noreferrer"
             >
               School Register
             </a>

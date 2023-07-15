@@ -12,7 +12,11 @@ const QuizArticle = () => {
       <div className="post__content-wrap">
         <div className="post__content">
           <h2 className="post__title">
-            <a href="https://wanghy7102.github.io/online-quiz" target="_blank">
+            <a
+              href="https://wanghy7102.github.io/online-quiz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Online Quiz
             </a>
           </h2>

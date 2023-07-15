@@ -16,6 +16,7 @@ const ProductArticle = () => {
             <a
               href="https://wanghy7102.github.io/user-database"
               target="_blank"
+              rel="noopener noreferrer"
             >
               User Database
             </a>
