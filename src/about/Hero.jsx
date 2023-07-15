@@ -13,8 +13,14 @@ const Hero = () => {
       <div className="wrap">
         <h1>About me</h1>
         <p>
-          Personal is the perfect theme for developers, designers and other
-          creatives.
+          I am a seasoned software engineer with over 10 years of experience in
+          modern technology stacks including Java and .NET based web
+          applications, relational databases and NoSQL, CI/CD pipelines, and
+          cloud development and administration. I have experience in
+          implementing both frontend and backend applications, developing
+          scripts to automate repetitive tasks, and in my most recent job,
+          devising data storage design that is scalable to accommodate 100+
+          million users while meeting the data sovereignty requirements.
         </p>
       </div>
     </section>
