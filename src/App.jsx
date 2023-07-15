@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 //import reactLogo from "./assets/react.svg";
 //import viteLogo from "/vite.svg";
 //import './App.css'
@@ -12,9 +12,9 @@ import Error from "./error/Error";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
@@ -23,7 +23,7 @@ function App() {
           <Route path="error" element={<Error />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
