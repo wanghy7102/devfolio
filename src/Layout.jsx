@@ -17,22 +17,22 @@ const Layout = () => {
             <div className="menu__wrap">
               <ul className="menu__list">
                 <li className="menu__list__item">
-                  <a href="/about" className="menu__list__item__link">
+                  <Link to="/about" className="menu__list__item__link">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="menu__list__item">
-                  <a
-                    href="/projects"
+                  <Link
+                    to="/projects"
                     className="menu__list__item__link cc-active"
                   >
                     Projects
-                  </a>
+                  </Link>
                 </li>
                 <li className="menu__list__item">
-                  <a href="/contact" className="menu__list__item__link">
+                  <Link to="/contact" className="menu__list__item__link">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
