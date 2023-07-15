@@ -43,75 +43,25 @@ const Layout = () => {
       <footer className="footer">
         <div className="wrap">
           <p className="footer__text">
-            A sleek, modern Jekyll theme for personal websites.
+            Please don’t hesitate to reach out by clicking the Contact link on
+            the top right.
           </p>
-
-          <div className="footer__copyright">
-            <span>© 2020 Personal</span>
-            <a href="https://jekyllthemes.io" target="_blank">
-              Jekyll Themes
-            </a>
-          </div>
 
           <ul className="socials">
             <li className="socials__item">
               <a
-                href="https://www.facebook.com/jekyllthemes/"
+                href="https://www.linkedin.com/in/wanghy2007"
                 target="_blank"
                 className="socials__item__link"
-                title="Facebook"
+                title="Linkedin"
               >
-                <i className="fab fa-facebook-f" aria-hidden="true"></i>
+                <i className="fab fa-linkedin-in" aria-hidden="true"></i>
               </a>
             </li>
 
             <li className="socials__item">
               <a
-                href="https://twitter.com/jekyllthemesio"
-                target="_blank"
-                className="socials__item__link"
-                title="Twitter"
-              >
-                <i className="fab fa-twitter" aria-hidden="true"></i>
-              </a>
-            </li>
-
-            <li className="socials__item">
-              <a
-                href="http://instagram.com"
-                target="_blank"
-                className="socials__item__link"
-                title="Instagram"
-              >
-                <i className="fab fa-instagram" aria-hidden="true"></i>
-              </a>
-            </li>
-
-            <li className="socials__item">
-              <a
-                href="https://medium.com/"
-                target="_blank"
-                className="socials__item__link"
-                title="Medium"
-              >
-                <i className="fab fa-medium" aria-hidden="true"></i>
-              </a>
-            </li>
-
-            <li className="socials__item">
-              <a
-                href="https://www.quora.com/"
-                target="_blank"
-                className="socials__item__link"
-                title="Quora"
-              >
-                <i className="fab fa-quora" aria-hidden="true"></i>
-              </a>
-            </li>
-
-            <li className="socials__item">
-              <a
-                href="https://github.com/"
+                href="https://github.com/wanghy7102"
                 target="_blank"
                 className="socials__item__link"
                 title="Github"
