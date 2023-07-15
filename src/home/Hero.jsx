@@ -4,17 +4,17 @@ const Hero = () => {
       <div
         className="hero__image"
         style={{
-          backgroundImage: `url("https://d1qmdf3vop2l07.cloudfront.net/yellow-sage.cloudvent.net/hash-store/e9b19c82eef5a91b912144fae43d86a5.jpg")`,
+          backgroundImage: `url("img/home.jpg")`,
         }}
       >
         <div className="hero__overlay"></div>
       </div>
 
       <div className="wrap">
-        <h1>A sleek, modern Jekyll theme for personal websites</h1>
+        <h1>Hi, I am Hong-Yi</h1>
         <p>
-          Personal is the perfect theme for developers, designers and other
-          creatives.
+          I am a full-stack developer with more than 10 years of experience. How
+          can i be of service?
         </p>
 
         <ul className="socials">

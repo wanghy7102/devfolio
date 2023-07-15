@@ -6,7 +6,7 @@ const Layout = () => {
       <header className="header">
         <div className="wrap">
           <Link to="/" className="header__title cc-active">
-            Personal
+            Hong-Yi's Devfolio
           </Link>
           <div className="menu">
             <div className="menu__toggle js-menu-toggle">
