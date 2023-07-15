@@ -13,28 +13,30 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const token = captchaRef.current.getValue();
-    captchaRef.current.reset();
-    const templateParams = {
-      email: email,
-      name: name,
-      message: message,
-      "g-recaptcha-response": token,
-    };
-    emailjs
-      .send(
-        "service_6urdlqw",
-        "template_ovm27eq",
-        templateParams,
-        "emtCwHO16kNS49jde"
-      )
-      .then(
-        (response) => {
-          navigate("/success");
-        },
-        (error) => {
-          navigate("/error");
-        }
-      );
+    if (token) {
+      captchaRef.current.reset();
+      const templateParams = {
+        email: email,
+        name: name,
+        message: message,
+        "g-recaptcha-response": token,
+      };
+      emailjs
+        .send(
+          "service_6urdlqw",
+          "template_ovm27eq",
+          templateParams,
+          "emtCwHO16kNS49jde"
+        )
+        .then(
+          (response) => {
+            navigate("/success");
+          },
+          (error) => {
+            navigate("/error");
+          }
+        );
+    }
   };
 
   return (
@@ -87,7 +89,7 @@ const ContactForm = () => {
               />
 
               <ReCAPTCHA
-                sitekey="6Le_Qu0mAAAAAFjsfGnbaNrYXugjXlQLzMxNHiS5"
+                sitekey="6LdIMu0mAAAAAPHfVMafykLbrDDVuVjFWJ9QMYNl"
                 ref={captchaRef}
               />
 
