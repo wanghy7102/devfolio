@@ -5,7 +5,7 @@ const Layout = () => {
     <>
       <header className="header">
         <div className="wrap">
-          <Link to="/" className="header__title cc-active">
+          <Link to="/devfolio" className="header__title cc-active">
             Hong-Yi's Devfolio
           </Link>
           <div className="menu">
@@ -17,20 +17,23 @@ const Layout = () => {
             <div className="menu__wrap">
               <ul className="menu__list">
                 <li className="menu__list__item">
-                  <Link to="/about" className="menu__list__item__link">
+                  <Link to="/devfolio/about" className="menu__list__item__link">
                     About
                   </Link>
                 </li>
                 <li className="menu__list__item">
                   <Link
-                    to="/projects"
+                    to="/devfolio/projects"
                     className="menu__list__item__link cc-active"
                   >
                     Projects
                   </Link>
                 </li>
                 <li className="menu__list__item">
-                  <Link to="/contact" className="menu__list__item__link">
+                  <Link
+                    to="/devfolio/contact"
+                    className="menu__list__item__link"
+                  >
                     Contact
                   </Link>
                 </li>

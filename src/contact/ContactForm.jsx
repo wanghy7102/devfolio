@@ -30,10 +30,10 @@ const ContactForm = () => {
         )
         .then(
           (response) => {
-            navigate("/success");
+            navigate("/devfolio/success");
           },
           (error) => {
-            navigate("/error");
+            navigate("/devfolio/error");
           }
         );
     }
