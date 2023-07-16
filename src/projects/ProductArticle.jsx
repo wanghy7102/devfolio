@@ -14,7 +14,7 @@ const ProductArticle = () => {
         <div className="post__content">
           <h2 className="post__title">
             <a
-              href="https://wanghy7102.github.io/user-database/"
+              href="https://wanghy2007.github.io/user-database/"
               target="_blank"
               rel="noopener noreferrer"
             >
